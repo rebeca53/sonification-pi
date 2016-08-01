@@ -14,6 +14,7 @@ Felipe Alexandre L. de Abreu
 # Running the code
 The code must be run in a Raspberry Pi with light and temperature sensors and a push button.
 In a few lines what the code does is:
-- Get 
+- Pi get data from the sensors
+- Write the values 
 
 
