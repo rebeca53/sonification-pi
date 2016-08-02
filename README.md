@@ -10,6 +10,14 @@ Marcelo Moreira Nicoletti
 Felipe Alexandre L. de Abreu
 
 # About the project
+Data sonification is a useful technique that enable multitasking while "reading" data. It consists on converting numbers into sound. This project intends to apply sonification to PiSat data. In specific, get sensors data from a Raspberry Pi and convert into midi files. The MIDI files are then sent to a PC Linux (the "ground station") via FTP. It is a nearly Real Tie Process.
+### The MIDI files
+It is a very small way to store sound. It is a command based file and the commands are called Events.
+Events can be described by:
+- Velocity: the amplitude or how "strong" a piano key is pressed.
+- Pitch: the frequency, i.e., which key of a piano, a Do (C) or a Mi (E)?
+- Tick: the start time or the relative time when the event ocurred. The actual event is equal to the tick + sum of all previous events ticks.
+### The python-midi library
 
 # Running the code
 The code must be run in a Raspberry Pi with light and temperature sensors and a push button.
