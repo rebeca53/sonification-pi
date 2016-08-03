@@ -23,11 +23,11 @@ The library we used to the MIDI part is the python-midi. You can find it at http
 
 # Running the code
 The code must be run in a Raspberry Pi with light and temperature sensors and a push button.
-In a few lines what the code does is:
+In a few lines what the code does is:<br />
 In a loop:
 - Pi get data from the sensors
 - Write the data as Events in a Pattern
-- Get the Pattern into a MIDI file
+- Get the Pattern into a MIDI file <br />
 Everytime a interrupt (caused by a push button) happens:
 - Send the MIDI file via FTP to a PC
 - Erase the MIDI file from the Pi
